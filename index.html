@@ -7,17 +7,17 @@
   </head>
   <body>
     <div class="shadow-div">
-    <header class="main-header">
+    <header class="main-header" data-test="header">
 <nav class="main-nav">
   <a class="logo" href="#" >
-    <img src="" alt="Логотип City of Sedona">
+    <img src="#" alt="Логотип City of Sedona">
   </a>
 <ul class="site-navigation">
   <li class="navigation-item">
     <a class="navigation-link" href="#">Главная</a>
   </li>
   <li class="navigation-item">
-    <a class="navigation-link" href="">О Седоне</a>
+    <a class="navigation-link" href="#">О Седоне</a>
   </li>
   <li class="navigation-item">
     <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -26,36 +26,37 @@
 <ul class="navigation-user">
   <li class="nav-user-item">
     <a class="search" href="#">
-      <img src="" alt="Поиск">
+      <img src="#" alt="Поиск">
     </a>
   </li>
 <li class="nav-user-item">
   <a class="like" href="#">
-    <img src="" alt="Избранное">
+    <img src="#" alt="Избранное">
+    <output name="result">12</output>
   </a>
 </li>
 <li class="nav-user-item">
-<button type="button" name="button" class="nav-button">ХОЧУ СЮДА!</button>
+  <p><a href="#" class="nav-button">ХОЧУ СЮДА! </a></p>
 </li>
 </ul>
 </nav>
     </header>
 
-    <main class="main-index">
-<section class="hero">
-  <img src="" alt="«Welcome to the gorgeous Sedona, because the Grand Canyon sucks!»">
+    <main class="main-index" data-test="main">
+<section class="hero" data-test="hero">
+  <img src="#" alt="«Welcome to the gorgeous Sedona, because the Grand Canyon sucks!»">
    <h1 class="visually-hidden">Город Седона</h1>
   <p class="main-discription">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
   <p class="discription">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 </section>
 
-<section class="advantages">
+<section class="advantages" data-test="advantages">
   <h2 class="visually-hidden">Преимущества Седоны</h2>
   <ul class="advantages-list">
     <li class="advantages-list-item">
   <h3>Настоящий городок</h3>
   <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-  <img src="" alt="пейзаж седоны">
+  <img src="#" alt="Заведение седоны">
     </li>
     <li class="advantages-list-item">
     <h3>Небольшая площадь</h3>
@@ -70,84 +71,81 @@
     <p>Большинство едет в Гранд Каньон и толпится там</p>
     </li>
     <li class="advantages-list-item">
-      <img src="" alt="каньон в седоне">
+      <img src="#" alt="каньон в седоне">
   <h3>Там есть мост дьявола</h3>
   <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
     </li>
   </ul>
-<p class="main-discription">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-<p class="discription">Опытный персонал и качественное обслуживание!</p>
 </section>
 
-<section class="service">
+<section class="service" data-test="advantages">
   <h2 class="visually-hidden">Услуги Седоны</h2>
+  <p class="main-discription">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+  <p class="discription">Опытный персонал и качественное обслуживание!</p>
 <ul class="sevice-list">
   <li  class="service-list-item">
-    <img src="" alt="доступное жилье">
     <h3>ЖИЛЬЕ</h3>
     <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
   </li >
   <li class="service-list-item">
-    <img src="" alt="вкусная еда">
     <h3>ЕДА</h3>
     <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
   </li>
   <li class="service-list-item">
-    <img src="" alt="подарки">
     <h3>СУВЕНИРЫ</h3>
     <p>Не только китайского, но и настоящего местного производства!</p>
   </li>
 </ul>
 </section>
 
-<section class="reservation">
-<p class="main-discription">ЗАИНТЕРЕСОВАЛИСЬ?</p>
+<section class="reservation" data-test="search">
+<h3 class="main-discription">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
 <p class="discription">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в СедонеУкажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 <button type="button" name="button" class="search-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
 </section>
     </main>
-
-    <footer class="main-footer">
 <section class="newsletter">
-<p class="main-discription">Подпишитесь на рассылку</p>
+<h2 class="main-discription">Подпишитесь на рассылку</h2>
 <p class="discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
-<div class="">
   <form class="subscribe" action="https://echo.htmlacademy.ru/" method="post">
     <p>
+      <label for="email" class="visually-hidden"></label>
 <input type="email" name="email" placeholder="Ваш E-mail" id="email">
 <button type="submit" class="button">ПОДПИСАТЬСЯ</button>
 </p>
 </form>
-</div>
 </section>
-<section class="footer-contacts">
+<footer class="main-footer">
+<section class="footer-contacts" data-test="footer">
+  <h2 class="visually-hidden">Наши контакты</h2>
   <ul class="social-list">
     <li class="social-item">
-      <a href="https://vk.com/htmlacademy">
-        <img src="" alt="VK">
+      <a href="https://vk.com/htmlacademy" rel="noreferrer nooponer" target="_blank">
+        <span class="visually-hidden">Мы в Vk</span>
+        <img src="#" alt="VK">
       </a>
     </li>
     <li class="social-item">
-      <a href="https://t.me/htmlacademy">
-        <img src="" alt="Telegram">
+      <a href="https://t.me/htmlacademy" rel="noreferrer nooponer" target="_blank">
+        <span class="visually-hidden">Мы в Телеграмм!</span>
+        <img src="#" alt="Telegram">
       </a>
     </li>
     <li class="social-item">
-      <a href="https://www.youtube.com/user/htmlacademyru">
-      <img src="" alt="Youtube">
+      <a href="https://www.youtube.com/user/htmlacademyru" rel="noreferrer nooponer" target="_blank">
+        <span class="visually-hidden">Мы на Youtube!</span>
+      <img src="#" alt="Мы на Youtube!">
       </a>
     </li>
   </ul>
   <address class="contacts-adress">
     <a href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
-    <a class="academy-logo" href="https://htmlacademy.ru/">
-      <img src=""  alt="Логотип html academy" >
+    <a class="academy-logo" href="https://htmlacademy.ru/" rel="noreferrer nooponer" target="_blank">
+      <img src="#"  alt="Логотип html academy" >
     </a>
-</section>
+  </section>
     </footer>
-
-
     </div>
   </body>
 </html>
