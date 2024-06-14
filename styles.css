@@ -444,6 +444,10 @@ line-height: 20px;
 border: none;
 }
 
+.active-favorites {
+  background-color: #7DB54F;
+}
+
 .rating {
   width: 140px;
   height: 37px;
