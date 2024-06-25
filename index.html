@@ -8,7 +8,7 @@
     <title>Город Седона</title>
   </head>
   <body>
-    <div class="shadow-div">
+    <div class="wrapper">
       <header class="main-header" data-test="header">
         <nav class="main-nav">
           <a class="logo" href="#">
@@ -47,11 +47,11 @@
         <section class="hero" data-test="hero">
           <img src="images/welcome.svg" width="458" height="352"  alt="«Welcome to the gorgeous Sedona, because the Grand Canyon sucks!»">
           <h1 class="visually-hidden">Город Седона</h1>
-          <p class="main-discription">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="discription">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
 
         <section class="advantages" data-test="advantages">
+          <p class="main-discription">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="discription">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           <h2 class="visually-hidden">Преимущества Седоны</h2>
           <ul class="advantages-list">
             <li class= "special-advantages">
@@ -106,25 +106,24 @@
             </li>
           </ul>
         </section>
-
         <section class="reservation" data-test="search">
           <h3 class="main-discription">Заинтересовались?</h3>
           <p class="discription">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
             Седоне</p>
           <button type="button" name="button" class="search-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
         </section>
-      </main>
-      <section class="newsletter" data-test="subscribe">
-        <h2 class="main-discription">Подпишитесь на рассылку</h2>
-        <p class="discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p>
-            <label for="email" class="visually-hidden"></label>
-            <input class="email" type="email" name="email" placeholder="Ваш E-mail" id="email">
+        <section class="newsletter" data-test="subscribe">
+          <h2 class="main-discription">Подпишитесь на рассылку</h2>
+          <p class="discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p>
+              <label for="email" class="visually-hidden"></label>
+              <input class="email" type="email" name="email" placeholder="Ваш E-mail" id="email">
+            </p>
             <button type="submit" class="button-submit">ПОДПИСАТЬСЯ</button>
-          </p>
-        </form>
-      </section>
+          </form>
+        </section>
+      </main>
       <footer class="main-footer" data-test="footer">
         <section class="footer-contacts" >
           <h2 class="visually-hidden">Наши контакты</h2>

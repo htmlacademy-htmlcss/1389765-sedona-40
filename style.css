@@ -7,13 +7,12 @@
 }
 
 @font-face {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans700.woff2") format("woff2");
+  src: url("fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-
 
 html {
   height: 100%;
@@ -27,22 +26,23 @@ flex-grow: 1;
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans",sans-serif;
   font-size: 18px;
   line-height: 21px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background-color: #F2F2F2;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  height: 100%;
 }
 
-.shadow-div {
+.wrapper{
   background-color: #FFFFFF;
   margin: 0 auto;
   width: 1200px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 /*навигация*/
@@ -56,6 +56,20 @@ body {
 
 .logo {
   margin-right: 30px;
+}
+
+.output {
+width: 20px;
+height: 20px;
+background-color: #7DB54F;
+color: #FFFFFF;
+font-size: 10px;
+font-weight: 400;
+line-height: 10px;
+text-align: center;
+border-radius: 10px;
+margin-left: -10px;
+margin-bottom: -10px;
 }
 
 .main-nav{
@@ -112,6 +126,7 @@ margin-right: auto;
   background-color: #756157;
   text-decoration: none;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .navigation-user {
@@ -150,20 +165,25 @@ margin: 0 auto;
   background-image: url("images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 69px;
 }
 
-.hero .main-discription {
-  width: 620px;
-  text-align: center;
 
-}
-
-.hero .discription {
-  width: 651px;
-  text-align: center;
-}
 
 /*вторая секция*/
+
+.advantages .main-discription {
+  width: 620px;
+  text-align: center;
+  margin-bottom: 25px;
+
+}
+
+.advantages  .discription {
+  width: 651px;
+  text-align: center;
+  margin-bottom: 69px;
+}
 
 .advantages {
   margin-bottom: 64px;
@@ -259,6 +279,7 @@ background-color: #83B3D31F;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 
 }
 
@@ -328,6 +349,7 @@ margin: 0 auto;
   display: block;
   margin: 0 auto;
   margin-bottom: 96px;
+  cursor: pointer;
 }
 .reservation p {
 width: 592px;
@@ -343,11 +365,13 @@ margin-bottom: 64px;
 
 /*подпишись на рассылку*/
 
+
+
 .newsletter {
 background-image: url("images/subscribe-background.jpg");
 background-size: cover;
 background-repeat: no-repeat;
-padding: 96px 258px 102px 258px;
+padding: 96px 247px 102px 258px;
 }
 .newsletter-catalog {
   background-image: none;
@@ -369,8 +393,8 @@ padding: 96px 258px 102px 258px;
 
 .button-submit {
 width: 232px;
-height: 52px;
-border-radius: 4px;
+height: 54px;
+border-radius: 0px 4px 4px 0px;
 color: #FFFFFF;
 background-color: #82B3D3;
 border: none;
@@ -378,14 +402,19 @@ font-size: 20px;
 text-align: center;
 font-weight: 700;
 font-family: "PT Sans";
+cursor: pointer;
+
 }
 
-
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
 
 .email{
 width: 452px;
 height: 52px;
-border-radius: 4px;
+border-radius: 4px 0px 0px 4px;
 border: none;
 font-family: PT Sans;
 font-size: 18px;
@@ -429,21 +458,36 @@ width: 331px;
   margin-right: 27px;
 }
 /*каталог main фильтры*/
+.promo-icon {
+  margin-right: 5px;
+}
 
 .filters {
 background-image: url("images/catalog-background.jpeg");
 background-size: cover;
  color: #FFFFFF;
+ padding: 35px 70px 70px 70px;
+ margin-bottom: 20px;
 }
 
 .filters-groups {
   display: flex;
 }
+
+.filters-group:not(:last-child){
+  margin-right: 70px;
+}
+
+.last-filters-group {
+margin-right: 140px;
+}
+
 .promo-icons {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  margin-bottom: 40px;
 }
 
 .promo-icons-item {
@@ -456,6 +500,8 @@ background-size: cover;
 .filters-list {
   list-style: none;
   width: 150px;
+  margin: 0;
+  padding: 0;
 }
 
 .filters h1 {
@@ -465,6 +511,7 @@ text-align: left;
 color: #FFFFFF;
 margin: 0;
 line-height: 78px;
+margin-bottom: 8px;
 }
 
 .filters-title {
@@ -472,6 +519,10 @@ font-size: 20px;
 font-weight: 700;
 line-height: 24px;
 text-align: left;
+margin-bottom: 32px;
+}
+.filters-list-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 .filters-group {
 font-size: 18px;
@@ -482,8 +533,20 @@ text-align: left;
 
 .main-price{
   border: none;
+  display: flex;
+}
+.filters-buttons {
+  width: 191px;
 }
 
+.price-input {
+  width: 143px;
+}
+
+.filters-price {
+  width: 288px;
+  margin-right: 70px;
+}
 .filters-submit-button{
   width: 191px;
 height: 36px;
@@ -497,6 +560,9 @@ font-size: 16px;
 font-weight: 700;
 line-height: 20px;
 text-align: center;
+cursor: pointer;
+text-transform: uppercase;
+margin-bottom: 32px;
 
 }
 
@@ -506,12 +572,22 @@ font-weight: 700;
 color: #FFFFFF;
 border: none;
 background-color: transparent;
+cursor: pointer;
+text-transform: uppercase;
+width: 191px;
 }
 
 /*каталог отелей*/
+.catalog-header {
+  display: flex;
+  align-items: center;
+margin-bottom: 20px;
+
+}
+
 .catalog {
   padding-left: 70px;
-  padding-right: 70px;
+  padding-right: 50px;
 }
 
 .hotels-found {
@@ -521,6 +597,7 @@ font-weight: 700;
 line-height: 36px;
 text-align: left;
 text-transform: uppercase;
+margin-right: 200px;
 }
 .select-control {
 background-color: transparent;
@@ -534,6 +611,7 @@ font-size: 18px;
 font-weight: 400;
 line-height: 21px;
 text-align: left;
+margin-right: 70px;
 }
 
 .catalog-view-buttons {
@@ -548,7 +626,8 @@ text-align: left;
   height: 48px;
   border: solid 2px #E5E5E5;
   border-radius: 4px;
-  background-color: transparent;s
+  background-color: transparent;
+
 }
 
 .catalog-view.active {
@@ -560,43 +639,52 @@ text-align: left;
   background-image: url("images/show_table.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: 8px;
+
 }
 
 .card-view-button-slider {
   background-image: url("images/show_slides.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: 8px;
 }
 
 .card-view-button-list {
   background-image: url("images/show_list.svg");
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
 .catalog-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 80px;
+
+}
+.catalog-list img {
+  display: block;
+
 }
 
 .catalog-list-item {
-width: 340px;
-height:438pxpx;
-padding: 20px 0px 0px 0px;
-gap: 16px;
-border-radius: 4px;
-border: 1px;
-border-color: black;
-
-}
+  width: 340px;
+  height:438px;
+  border-radius: 4px;
+  border: #E6E6E6 dashed 1px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20px 20px 20px;
+  }
 
 
 .catalog-list-title {
   width: 340px;
-  height: 438px;
 }
 
 .hotel-type {
@@ -604,6 +692,7 @@ font-size: 18px;
 font-weight: 400;
 line-height: 21px;
 text-align: left;
+width: 140px;
 }
 
 .catalog-title {
@@ -611,6 +700,9 @@ font-size: 24px;
 font-weight: 700;
 line-height: 28px;
 text-align: left;
+width: 300px;
+margin: 0;
+padding: 0;
 }
 
 .catalog-list a {
@@ -622,23 +714,24 @@ text-align: left;
 font-size: 18px;
 font-weight: 400;
 line-height: 21px;
+width: 140px;
 }
 
- a.more {
+.catalog-list .more {
   color: #FFFFFF;
   width: 140px;
   height: 36px;
-  padding: 8px 50px 8px 50px;
-  gap: 10px;
   border-radius: 4px;
   background-color: #756157;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
-.favorites {
+.favorites-button {
 width: 140px;
 height: 36px;
 border-radius: 4px;
@@ -649,6 +742,8 @@ font-size: 16px;
 font-weight: 700;
 line-height: 20px;
 border: none;
+cursor: pointer;
+font-family: "PT Sans";
 }
 
 .active-favorites {
@@ -662,12 +757,16 @@ border: none;
   font-size: 16px;
   background-color: #F2F2F2;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .pagination-list{
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 8px;
 }
 
 .pagination-item{
@@ -678,6 +777,9 @@ border: none;
   font-size: 20px;
   font-weight: 700;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagination-item a{
@@ -690,6 +792,7 @@ background-color: transparent;
 
 .more-pagination a{
   color: #000000;
+  padding-top: 20px;
 }
 
 .pagination-item.active-pagination {
@@ -707,6 +810,6 @@ color: #000000;
   color: #000000;
   }
 
-  address {
+  .phone {
     font-style: normal;
   }
