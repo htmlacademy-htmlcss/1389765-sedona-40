@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Город Седона</title>
   </head>
+
   <body>
     <div class="wrapper">
       <header class="main-header" data-test="header">
         <nav class="main-nav">
           <a class="logo" href="#">
-            <img src="images/logo-sedona.svg" alt="Логотип City of Sedona" width="138" height="64">
+            <img src="images/logo-sedona.svg" alt="Логотип City of Sedona." width="138" height="64">
           </a>
           <ul class="site-navigation">
             <li class="navigation-item">
@@ -28,40 +29,43 @@
           <ul class="navigation-user">
             <li class="nav-user-item">
               <a class="search" href="#">
-                <img src="images/search.svg" alt="Поиск" width="20" height="20">
+                <img src="images/search.svg" alt="Поиск." width="20" height="20">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="nav-user-item">
               <a class="like" href="#">
-                <img src="images/like.svg" alt="Избранное" width="18" height="17">
+                <img src="images/like.svg" alt="Избранное." width="18" height="17">
                 <span class="visually-hidden">Избранное</span>
                 <output name="result" class="output">12</output>
               </a>
             </li>
+
           </ul>
           <p><a href="#" class="nav-button">ХОЧУ СЮДА! </a></p>
         </nav>
       </header>
       <main class="main-index main-container" data-test="main">
         <section class="hero" data-test="hero">
-          <img src="images/welcome.svg" width="458" height="352"  alt="«Welcome to the gorgeous Sedona, because the Grand Canyon sucks!»">
+          <img class="hero-main-img" src="images/welcome.svg" width="458" height="352"
+            alt="«Welcome to the gorgeous Sedona, because the Grand Canyon sucks!»">
           <h1 class="visually-hidden">Город Седона</h1>
         </section>
 
         <section class="advantages" data-test="advantages">
+          <h2 class="visually-hidden">Преимущества Седоны</h2>
           <p class="main-discription">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="discription">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-          <h2 class="visually-hidden">Преимущества Седоны</h2>
+
           <ul class="advantages-list">
-            <li class= "special-advantages">
+            <li class="special-advantages">
               <div class="advanteges-container">
-              <div class="advantage">
-                <h3>Настоящий городок</h3>
-                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <div class="advantage">
+                  <h3>Настоящий городок</h3>
+                  <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
+                <img src="images/advanteges-1.jpg" alt="Заведение седоны." width="800" height="385">
               </div>
-              <img  src="images/advanteges-1.jpg" alt="Заведение седоны" width="800" height="385">
-            </div>
             </li>
             <li class="advantages-list-item">
               <h3>Небольшая площадь</h3>
@@ -77,17 +81,17 @@
             </li>
             <li class="special-advantages">
               <div class="advanteges-container">
-              <img src="images/advanteges-2.jpg" alt="каньон в седоне" width="800" height="385">
-<div class="advantage">
-              <h3>Там есть мост дьявола</h3>
-              <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </div>
-            </div>
+                <img src="images/advanteges-2.jpg" alt="Каньон в седоне." width="800" height="385">
+                <div class="advantage">
+                  <h3>Там есть мост дьявола</h3>
+                  <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                </div>
+              </div>
             </li>
           </ul>
         </section>
 
-        <section class="service" data-test="advantages">
+        <section class="service">
           <h2 class="visually-hidden">Услуги Седоны</h2>
           <p class="main-discription">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
           <p class="discription">Опытный персонал и качественное обслуживание!</p>
@@ -125,25 +129,26 @@
         </section>
       </main>
       <footer class="main-footer" data-test="footer">
-        <section class="footer-contacts" >
+        <section class="footer-contacts">
           <h2 class="visually-hidden">Наши контакты</h2>
           <ul class="social-list">
             <li class="social-item">
-              <a href="https://vk.com/htmlacademy" rel="noreferrer nooponer" target="_blank">
+              <a class="social-item-link" href="https://vk.com/htmlacademy" rel="noreferrer nooponer" target="_blank">
                 <span class="visually-hidden">Мы в Vk</span>
-                <img src="images/vk.svg" alt="VK" height="14" width="24">
+                <img src="images/vk.svg" alt="VK." height="14" width="24">
               </a>
             </li>
             <li class="social-item">
-              <a href="https://t.me/htmlacademy" rel="noreferrer nooponer" target="_blank">
+              <a class="social-item-link" href="https://t.me/htmlacademy" rel="noreferrer nooponer" target="_blank">
                 <span class="visually-hidden">Мы в Телеграмм!</span>
-                <img src="images/telegram.svg" alt="Telegram" width="18" height="16">
+                <img src="images/telegram.svg" alt="Telegram." width="18" height="16">
               </a>
             </li>
             <li class="social-item">
-              <a href="https://www.youtube.com/user/htmlacademyru" rel="noreferrer nooponer" target="_blank">
+              <a class="social-item-link" href="https://www.youtube.com/user/htmlacademyru" rel="noreferrer nooponer"
+                target="_blank">
                 <span class="visually-hidden">Мы на Youtube!</span>
-                <img src="images/youtube.svg" alt="Мы на Youtube!" width="22" height="17">
+                <img src="images/youtube.svg" alt="Мы на Youtube!" width="22" height="16">
               </a>
             </li>
           </ul>
@@ -151,7 +156,7 @@
             <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
           </address>
           <a class="academy-logo" href="https://htmlacademy.ru/" rel="noreferrer nooponer" target="_blank">
-            <img src="images/logo-html.svg" alt="Логотип html academy" width="115" height="33">
+            <img src="images/logo-html.svg" alt="Логотип html academy." width="115" height="33">
           </a>
         </section>
       </footer>

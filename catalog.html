@@ -13,7 +13,7 @@
       <header class="main-header" data-test="header">
         <nav class="main-nav">
           <a class="logo" href="#">
-            <img src="images/logo-sedona.svg" alt="Логотип City of Sedona" width="138" height="64">
+            <img src="images/logo-sedona.svg" alt="Логотип City of Sedona." width="138" height="64">
           </a>
           <ul class="site-navigation">
             <li class="navigation-item">
@@ -29,13 +29,13 @@
           <ul class="navigation-user">
             <li class="nav-user-item">
               <a class="search" href="#">
-                <img src="images/search.svg" alt="Поиск" width="20" height="20">
+                <img src="images/search.svg" alt="Поиск." width="20" height="20">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="nav-user-item">
               <a class="like" href="#">
-                <img src="images/like.svg" alt="Избранное" width="18" height="17">
+                <img src="images/like.svg" alt="Избранное." width="18" height="17">
                 <span class="visually-hidden">Избранное</span>
                 <output name="result" class="output">12</output>
               </a>
@@ -50,14 +50,14 @@
           <ul class="promo-icons">
             <li class="promo-icon">
               <a href="index.html">
-                <img src="images/icon-home.svg" alt="Главная страница">
+                <img src="images/icon-home.svg" alt="Главная страница.">
               </a>
             </li>
             <li class="promo-icon">
-              <img src="images/breadcrumbs.svg" alt="переход на другую страницу">
-              </li>
+              <img src="images/breadcrumbs.svg" alt="переход на другую страницу.">
+            </li>
             <li class="promo-icons-item">
-              <a >Гостиницы</a>
+              <a>Гостиницы</a>
             </li>
           </ul>
           <h2 class="visually-hidden">Выбор критериев отеля</h2>
@@ -91,16 +91,17 @@
               </ul>
             </fieldset>
             <fieldset class="main-price">
-              <div class="filters-price">
               <legend class="visually-hidden"> Расчитать стоимость </legend>
-              <label class="filters-title">Стоимость, <span>₽</span>:</label>
-              <label><input class="price-input" type="text" value="0">от</label>
-              <label><input class="price-input" type="text" value="9000">до</label>
-            </div>
+              <div class="filters-price">
+
+                <label class="filters-title">Стоимость, <span>₽</span>:</label>
+                <label><input class="price-input" type="text" value="0">от</label>
+                <label><input class="price-input" type="text" value="9000">до</label>
+              </div>
               <div class="filters-buttons">
-              <button class="filters-submit-button" type="submit">Применить</button>
-              <button class="filters-button-reset" type="reset">Сбросить</button>
-            </div>
+                <button class="filters-submit-button" type="submit">Применить</button>
+                <button class="filters-button-reset" type="reset">Сбросить</button>
+              </div>
             </fieldset>
           </form>
         </section>
@@ -116,64 +117,75 @@
 
             <ul class="catalog-view-buttons">
               <li class="catalog-view-item">
-                <button class=" catalog-view catalog-view-button-table active" type="button"> <span class="visually-hidden">Показать таблицей</span></button>
+                <button class=" catalog-view catalog-view-button-table active" type="button"> <span
+                    class="visually-hidden">Показать таблицей</span></button>
               </li>
               <li class="catalog-view-item">
-                <button class="catalog-view card-view-button-slider " type="button"><span class="visually-hidden">Показать слайдами</span></button>
+                <button class="catalog-view card-view-button-slider " type="button"><span
+                    class="visually-hidden">Показать слайдами</span></button>
               </li>
               <li class="catalog-view-item">
-                <button class=" catalog-view card-view-button-list " type="button"><span class="visually-hidden">Показать списком</span></button>
+                <button class=" catalog-view card-view-button-list " type="button"><span
+                    class="visually-hidden">Показать списком</span></button>
               </li>
             </ul>
           </div>
           <ul class="catalog-list">
             <li class="catalog-list-item">
               <a href="#">
-                <img src="images/hotel-1.jpg" alt="отель Amara Resort & Spa" width="300" height="212">
+                <img class="catalog-img" src="images/hotel-1.jpg" alt="отель Amara Resort & Spa." width="300" height="212">
                 <h3 class="catalog-title">Amara Resort & Spa</h3>
               </a>
-              <p class="hotel-type">Гостиница</p>
-              <p class="hotel-price">От <span>4000₽</span></p>
-              <a href="#" class="more">ПОДРОБНЕЕ</a>
-              <button class="favorites-button" type="button" name="button">В ИЗБРАННОЕ</button>
-              <img src="images/star.svg" alt="звезда оценка отеля" class="star">
-              <p class="rating">РЕЙТИНГ:<span>8,5</span></p>
+              <dl class="catalog-table">
+              <dt class="hotel-type">Гостиница</dt>
+              <dd class="hotel-price">От <span>4000₽</span></dd>
+              <dt><a href="#" class="more">ПОДРОБНЕЕ</a></dt>
+              <dd><button class="favorites-button" type="button" name="button">В ИЗБРАННОЕ</button></dd>
+              <dt><img src="images/star.svg" alt="звезда оценка отеля" class="star"></dt>
+              <dd class="rating">РЕЙТИНГ:<span>8,5</span></dd>
+            </dl>
             </li>
             <li class="catalog-list-item">
               <a href="#">
-                <img src="images/hotel-2.jpg" alt="отель Villas at Poco Diablo" width="300" height="212">
+                <img src="images/hotel-2.jpg" alt="отель Villas at Poco Diablo." width="300" height="212">
                 <h3 class="catalog-title">Villas at Poco Diablo</h3>
               </a>
-              <p class="hotel-type">Гостиница</p>
-              <p class="hotel-price">От <span>5000₽</span></p>
-              <a href="#" class="more">ПОДРОБНЕЕ</a>
-              <button class="favorites-button active-favorites" type="button" name="button">В ИЗБРАННОМ</button>
-              <img src="images/star.svg" alt="звезда оценка отеля" class="star">
-              <p class="rating">РЕЙТИНГ:<span>9,2</span></p>
+              <dl class="catalog-table">
+              <dt class="hotel-type">Гостиница</dt>
+              <dd class="hotel-price">От <span>5000₽</span></dd>
+              <dt><a href="#" class="more">ПОДРОБНЕЕ</a></dt>
+              <dd><button class="favorites-button active-favorites" type="button" name="button">В ИЗБРАННОМ</button></dd>
+              <dt><img src="images/star.svg" alt="звезда оценка отеля" class="star"></dt>
+              <dd class="rating">РЕЙТИНГ:<span> 9,2</span></dd>
+            </dl>
             </li>
             <li class="catalog-list-item">
               <a href="#">
-                <img src="images/hotel-3.jpg" alt="отель Desert Quail Inn" width="300" height="212">
+                <img src="images/hotel-3.jpg" alt="отель Desert Quail Inn." width="300" height="212">
                 <h3 class="catalog-title">Desert Quail Inn</h3>
               </a>
-              <p class="hotel-type">Гостиница</p>
-              <p class="hotel-price">От <span>2500₽</span></p>
-              <a href="#" class="more">ПОДРОБНЕЕ</a>
-              <button class="favorites-button" type="button" name="button">В ИЗБРАННОЕ</button>
-              <img src="images/star.svg" alt="звезда оценка отеля" class="star">
-              <p class="rating">РЕЙТИНГ:<span>6,9</span></p>
+              <dl class="catalog-table">
+              <dt class="hotel-type">Гостиница</dt>
+              <dd class="hotel-price">От <span>2500₽</span></dd>
+              <dt><a href="#" class="more">ПОДРОБНЕЕ</a></dt>
+              <dd><button class="favorites-button" type="button" name="button">В ИЗБРАННОЕ</button></dd>
+              <dt><img src="images/star.svg" alt="звезда оценка отеля" class="star"></dt>
+              <dd class="rating">РЕЙТИНГ:<span>6,9</span></dd>
+            </dl>
             </li>
             <li class="catalog-list-item">
               <a href="#">
-                <img src="images/hotel-4.jpg" alt="отель GreenTree Inn" width="300" height="212">
+                <img src="images/hotel-4.jpg" alt="отель GreenTree Inn." width="300" height="212">
                 <h3 class="catalog-title">GreenTree Inn</h3>
               </a>
-              <p class="hotel-type">Гостиница</p>
-              <p class="hotel-price">От <span>1,500₽</span></p>
-              <a href="#" class="more">ПОДРОБНЕЕ</a>
-              <button class="favorites-button" type="button" name="button">В ИЗБРАННОЕ</button>
-              <img src="images/star.svg" alt="звезда оценка отеля" class="star">
-              <p class="rating">РЕЙТИНГ:<span>5,0</span></p>
+              <dl class="catalog-table">
+              <dt class="hotel-type">Гостиница</dt>
+              <dd class="hotel-price">От <span>1,500₽</span></dd>
+              <dt><a href="#" class="more">ПОДРОБНЕЕ</a></dt>
+              <dd><button class="favorites-button" type="button" name="button">В ИЗБРАННОЕ</button></dd>
+              <dt><img src="images/star.svg" alt="звезда оценка отеля" class="star"></dt>
+              <dd class="rating">РЕЙТИНГ:<span>5,0</span></dd>
+            </dl>
             </li>
 
           </ul>
@@ -213,25 +225,26 @@
         </section>
       </main>
       <footer class="main-footer" data-test="footer">
-        <section class="footer-contacts" >
+        <section class="footer-contacts">
           <h2 class="visually-hidden">Наши контакты</h2>
           <ul class="social-list">
             <li class="social-item">
-              <a href="https://vk.com/htmlacademy" rel="noreferrer nooponer" target="_blank">
+              <a class="social-item-link" href="https://vk.com/htmlacademy" rel="noreferrer nooponer" target="_blank">
                 <span class="visually-hidden">Мы в Vk</span>
-                <img src="images/vk.svg" alt="VK" height="14" width="24">
+                <img src="images/vk.svg" alt="VK." height="14" width="24">
               </a>
             </li>
             <li class="social-item">
-              <a href="https://t.me/htmlacademy" rel="noreferrer nooponer" target="_blank">
+              <a class="social-item-link" href="https://t.me/htmlacademy" rel="noreferrer nooponer" target="_blank">
                 <span class="visually-hidden">Мы в Телеграмм!</span>
-                <img src="images/telegram.svg" alt="Telegram" width="18" height="16">
+                <img src="images/telegram.svg" alt="Telegram." width="18" height="16">
               </a>
             </li>
             <li class="social-item">
-              <a href="https://www.youtube.com/user/htmlacademyru" rel="noreferrer nooponer" target="_blank">
+              <a class="social-item-link" href="https://www.youtube.com/user/htmlacademyru" rel="noreferrer nooponer"
+                target="_blank">
                 <span class="visually-hidden">Мы на Youtube!</span>
-                <img src="images/youtube.svg" alt="Мы на Youtube!" width="22" height="17">
+                <img src="images/youtube.svg" alt="Мы на Youtube!" width="22" height="16">
               </a>
             </li>
           </ul>
@@ -239,7 +252,7 @@
             <a href="tel:+78128121212" class="phone">+7 (812) 812-12-12</a>
           </address>
           <a class="academy-logo" href="https://htmlacademy.ru/" rel="noreferrer nooponer" target="_blank">
-            <img src="images/logo-html.svg" alt="Логотип html academy" width="115" height="33">
+            <img src="images/logo-html.svg" alt="Логотип html academy." width="115" height="33">
           </a>
         </section>
       </footer>
