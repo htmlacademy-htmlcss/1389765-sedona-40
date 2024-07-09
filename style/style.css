@@ -481,6 +481,13 @@ body {
   cursor: pointer;
 
 }
+.button-submit:hover {
+  background-color: hsl(204, 48%, 60%);
+}
+
+.button-submit:active{
+  color: hsla(0, 0%, 100%, 0.315);
+}
 
 .subscribe-form {
   display: flex;
