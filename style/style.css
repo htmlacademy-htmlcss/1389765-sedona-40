@@ -64,6 +64,7 @@ body {
 .like {
   margin-right: 20px;
   padding: 22px 12px 22px 12px;
+  position: relative;
 }
 
 .search {
@@ -92,14 +93,12 @@ body {
   line-height: 10px;
   text-align: center;
   border-radius: 10px;
-  margin-left: -10px;
-  margin-bottom: -10px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 8px;
-  right: 418px;
+  right: 0;
+  top:8px;
 
 }
 
@@ -405,7 +404,7 @@ body {
   background-color: #756157;
   text-decoration: none;
   width: 376px;
-  height: 52px;
+  padding: 10px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -470,7 +469,7 @@ body {
 
 .button-submit {
   width: 232px;
-  height: 54px;
+  padding: 14px;
   border-radius: 0px 4px 4px 0px;
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -720,6 +719,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+
 }
 
 .catalog-view {
@@ -728,7 +728,7 @@ body {
   border: solid 2px #E5E5E5;
   border-radius: 4px;
   background-color: transparent;
-
+display: block;
 }
 
 .catalog-view.active {
