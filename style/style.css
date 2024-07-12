@@ -729,6 +729,10 @@ opacity: 30%;
 
 .filters-list-item:not(:last-child) {
   margin-bottom: 16px;
+
+}
+.filter-span{
+  padding-left: 8px;
 }
 
 .filters-group {
@@ -1248,4 +1252,53 @@ color: rgba(255, 255, 255, 0.3);
   font-size: 18px;
   line-height: 133%;
 
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  display: none;
+}
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.modal-title{
+  color: #000000;
+  text-transform: uppercase;
+font-family: PT Sans;
+font-size: 30px;
+font-weight: 700;
+line-height: 36px;
+text-align: left;
+
+}
+.modal-auth {
+  width: 717px;
+  padding: 64px 70px 64px 70px;
+}
+
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 52px;
+  height: 52px;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 100%;
+  border: none;
+  background-image: url("../images/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
