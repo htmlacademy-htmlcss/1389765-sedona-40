@@ -127,22 +127,50 @@ body {
 
 .navigation-link {
   width: auto;
-  padding-top: 20px;
+  padding: 20 16px;
+  position: relative;
 
 }
+
+.navigation-link .current-page::after{
+position: absolute;
+content: "";
+width: calc(100%-20px);
+background-color: #756157;
+height: 2px;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+}
+.site-navigation .navigation-item {
+  display: flex;
+  align-items: center;
+}
+
+.site-navigation .navigation-item .navigation-link {
+ padding: 20px 10px;
+}
+.site-navigation .navigation-item .navigation-link:hover {
+  border: none;
+ }
+
 
 .navigation-link:hover {
-  border-bottom: solid 2px #756257;
-  padding-bottom: 17px;
+
+
 }
 
-
-
+li.navigation-item{
+  display: flex;
+  align-items: flex-end;
+}
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  column-gap: 32px;
   position: relative;
+  row-gap: 200px;
+  max-width: 550px;
 }
 
 .navigation-user {
@@ -162,7 +190,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 339px;
+
   align-items: center;
   margin-right: auto;
 }
@@ -242,21 +270,24 @@ body {
 .hero-main-img {
   display: block;
   margin: 0 auto;
-  padding: 40px;
-
+  position: relative;
 }
 
 .hero {
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+padding-top:30px;
+padding-bottom: 30px;
 
 }
 
-.hero::after {
-  background-image: url(../images/hero-bottom.svg);
-
+.hero-bottom {
+  width: 1200px;
+  position: absolute;
+  top:420px
 }
+
 
 
 
@@ -282,6 +313,31 @@ body {
 
 }
 
+.advantage-list-title::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(216, 216, 216, 0.52);
+  transform: translate(-50%);
+top:70px;
+left:85px;
+
+}
+
+.advantage-list-title-last::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.52);
+  transform: translate(-50%);
+  top:70px;
+  left:85px;
+}
+
 .advantages-list {
   list-style: none;
   margin: 0;
@@ -297,6 +353,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 
 }
 
@@ -310,6 +367,7 @@ body {
   margin: auto;
   margin-top: 102px;
   padding-bottom: 62px;
+  position: relative;
 }
 
 .advantage p {
@@ -360,6 +418,7 @@ body {
 
 .center-item {
   background-color: rgba(131, 179, 211, 0.2);
+  position: relative;
 }
 
 .advanteges-container {
@@ -757,7 +816,7 @@ body {
   padding: 0;
 }
 
-.label-price {}
+
 
 .price-input {
   width: 143px;
@@ -889,6 +948,7 @@ body {
   line-height: 21px;
   text-align: left;
   margin-right: 70px;
+
 
 }
 
@@ -1273,6 +1333,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 133%;
+  border: none;
 }
 
 .price-input2 {
@@ -1282,6 +1343,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 133%;
+  border: none;;
 
 }
 
@@ -1342,6 +1404,18 @@ padding-top: 34px;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+
+}
+
+.modal-close-button:hover{
+  background-color: rgba(230, 230, 230, 1);
+}
+.modal-close-button:focus{
+  border: solid 3px #82B3D3;
+}
+
+.modal-close-button:active{
+  opacity: 0.5;
 }
 
 .label-title {
@@ -1378,6 +1452,17 @@ padding-right: 20px;
   padding-left: 256px;
   padding-right: 256px;
   border: none;
+  cursor: pointer;
+}
+
+.modal-search:hover{
+background-color: rgba(104, 162, 202, 1);
+}
+.modal-search:active{
+color:rgba(255, 255, 255, 0.5);
+}
+.modal-search:focus{
+  background-color: rgba(104, 162, 202, 1);
 }
 
 .modal-input-big {
@@ -1397,6 +1482,7 @@ padding-right: 20px;
   background-image: url(../images/calendar.svg);
   background-repeat: no-repeat;
   background-position: 400px;
+
 }
 
 .modal-input-small {
@@ -1450,8 +1536,20 @@ padding-top: 4px;
   background-color: rgba(242, 242, 242, 1);
   margin-right: -2px;
   border-radius: 4px 0px 0px 4px;
+  cursor: pointer;
 }
 
+.plus:hover{
+  background-color: ;
+opacity: 0.5;
+background-color: rgba(242, 242, 242, 1);
+}
+.plus:focus{
+
+}
+.plus:active{
+
+}
 
 .minus {
   background-image: url(../images/button-minus.svg);
@@ -1463,7 +1561,7 @@ padding-top: 4px;
   background-color: rgba(242, 242, 242, 1);
   margin-left: -2px;
   border-radius: 0px 4px 4px 4px;
-
+cursor: pointer;
 }
 
 
@@ -1536,4 +1634,10 @@ height: 26px;
 border: none;
 border-radius: 20px;
 margin-left:10px;
+cursor: pointer;
+}
+
+
+.close-botton:hover{
+  opacity: 0.5;
 }
