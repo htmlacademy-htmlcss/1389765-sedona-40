@@ -117,7 +117,7 @@
                 </li>
 
                 <li class="form_checkbox filters-list-item">
-                  <input id="checkbox-3" type="checkbox" name="radio" value="">
+                  <input id="checkbox-3" type="checkbox" name="radio" value="Wi-Fi">
                   <label for="checkbox-3" class="filter-radio">Wi-Fi</label>
                 </li>
               </ul>
@@ -126,16 +126,16 @@
               <legend class="filters-title">Тип Жилья:</legend>
               <ul class="filters-list">
                 <li class="form_radio filters-list-item">
-                  <input id="radio-1" type="radio" name="radio" value="2" checked>
+                  <input id="radio-1" type="radio" name="radio" value="Гостиница" checked>
                   <label for="radio-1" class="filter-radio">Гостиница</label>
                 </li>
 
                 <li class="form_radio filters-list-item">
-                  <input id="radio-2" type="radio" name="radio" value="2">
+                  <input id="radio-2" type="radio" name="radio" value="Мотель">
                   <label for="radio-2" class="filter-radio">Мотель</label>
                 </li>
                 <li class="form_radio filters-list-item">
-                  <input id="radio-3" type="radio" name="radio" value="3">
+                  <input id="radio-3" type="radio" name="radio" value="Аппартаменты">
                   <label for="radio-3" class="filter-radio">Аппартаменты</label>
                 </li>
               </ul>
@@ -146,8 +146,7 @@
                 <label class="filters-title">Стоимость, <span>₽</span>:</label>
                 <div class="field-price">
                   <label class="label-price"><input class="price-input1" type="text" value="0"><span>от</span></label>
-                  <label class="label-price"><input class="price-input2" type="text"
-                      value="9000"><span>до</span></label>
+                  <label class="label-price"><input class="price-input2" type="text" value="9000"><span>до</span></label>
                 </div>
                 <div class="range">
                   <div class="range-scale">
@@ -174,7 +173,7 @@
           <h2 class="visually-hidden">Каталог гостиниц</h2>
           <div class="catalog-header">
             <p class="hotels-found">Найдено Гостиниц: <output>38</output></p>
-            <select class="select-control" aria-label="Сортировка">
+            <select  class="select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешёвое</option>
             </select>
             <ul class="catalog-view-buttons">
@@ -297,10 +296,10 @@
         <section class="newsletter newsletter-catalog" data-test="subscribe">
           <h2 class="main-discription">Подпишитесь на рассылку</h2>
           <p class="discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form  class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <p>
               <label for="email" class="visually-hidden"></label>
-              <input class="email" type="email" name="email" placeholder="Ваш E-mail" id="email">
+              <input disabled class="email" type="email" name="email" placeholder="Ваш E-mail" id="email">
             </p>
             <button type="submit" class="button-submit">ПОДПИСАТЬСЯ</button>
           </form>
