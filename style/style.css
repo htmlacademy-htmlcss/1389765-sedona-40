@@ -890,6 +890,7 @@ padding-top: 10px;
   width: 143px;
 }
 
+
 .main-price {
   border: none;
   display: flex;
@@ -1439,8 +1440,21 @@ padding: 2px 2px;
   font-size: 18px;
   line-height: 133%;
   border: none;;
+  outline: 0 ;
+  box-shadow: none;
+}
+
+input:focus {
+  outline: 0 ;
+}
+
+select:focus{
+
+    outline: 0 ;
 
 }
+
+
 
 .modal-container {
   position: fixed;
