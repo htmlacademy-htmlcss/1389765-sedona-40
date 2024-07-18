@@ -1374,7 +1374,10 @@ li.navigation-item {
 }
 
 .pagination-item:not(.active-pagination):active:not(.more-pagination) {
-  opacity: 60%;
+  background-color:rgba(130, 179, 211, 1);
+  .pagination-link{
+    opacity: 0.3;
+  }
 }
 
 .pagination-item:not(.active-pagination):focus:not(.more-pagination) {
