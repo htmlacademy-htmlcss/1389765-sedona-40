@@ -1937,6 +1937,9 @@ input[type="number"]:focus {
   background-color: #6c9e42;
 }
 
+.youtube-item {
+  padding-top: 2px;
+}
 .modal-close {
   display: none;
 }
