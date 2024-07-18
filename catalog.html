@@ -107,17 +107,17 @@
               <legend class="filters-title">Инфраструктура:</legend>
               <ul class="filters-list">
                 <li class="form_checkbox filters-list-item">
-                  <input id="checkbox-1" type="checkbox" name="radio" value="Бассейн" checked>
+                  <input class="visually-hidden" id="checkbox-1" type="checkbox" name="radio" value="Бассейн" checked>
                   <label for="checkbox-1" class="filter-radio">Бассейн</label>
                 </li>
 
                 <li class="form_checkbox filters-list-item">
-                  <input id="checkbox-2" type="checkbox" name="radio" value="Парковка" checked>
+                  <input class="visually-hidden" id="checkbox-2" type="checkbox" name="radio" value="Парковка" checked>
                   <label for="checkbox-2" class="filter-radio">Парковка</label>
                 </li>
 
                 <li class="form_checkbox filters-list-item">
-                  <input id="checkbox-3" type="checkbox" name="radio" value="Wi-Fi">
+                  <input class="visually-hidden" id="checkbox-3" type="checkbox" name="radio" value="Wi-Fi">
                   <label for="checkbox-3" class="filter-radio">Wi-Fi</label>
                 </li>
               </ul>
@@ -178,16 +178,16 @@
             </select>
             <ul class="catalog-view-buttons">
               <li class="catalog-view-item">
-                <a href="catalog.html?view=card" class=" catalog-view catalog-view-button-table active" type="button">
+                <a href="catalog.html?view=card" class=" catalog-view catalog-view-button-table active" >
                   <span class="visually-hidden">Показать таблицей</span></a>
               </li>
               <li class="catalog-view-item">
-                <a href="catalog.html?view=tile" class="catalog-view card-view-button-slider " type="button"><span
+                <a href="catalog.html?view=tile" class="catalog-view card-view-button-slider "><span
                     class="visually-hidden">Показать
                     слайдами</span></a>
               </li>
               <li class="catalog-view-item">
-                <a href="catalog.html?view=list" class=" catalog-view card-view-button-list " type="button"><span
+                <a href="catalog.html?view=list" class=" catalog-view card-view-button-list " ><span
                     class="visually-hidden">Показать
                     списком</span></a>
               </li>
@@ -205,6 +205,7 @@
               <button class="favorites-button" type="button" name="button">В ИЗБРАННОЕ</button>
               <div class="catalog-cards-rating">
                 <ul class="catalog-carsd-rating-stars list-reset star" aria-hidden="true">
+                  <span class="visually-hidden">Оценка отеля 4 зведы</span>
                   <li class="catalog-cards-rating-stars-item"> <img src="images/star.svg" alt=""></li>
                   <li class=" catalog-cards-rating-stars-item"><img src="images/star.svg" alt=""></li>
                   <li class=" catalog-cards-rating-stars-item"><img src="images/star.svg" alt=""></li>
@@ -224,6 +225,7 @@
               <a href="#" class="more">ПОДРОБНЕЕ</a>
               <button class="favorites-button active-favorites" type="button" name="button">В ИЗБРАННОМ</button>
               <div class="catalog-cards-rating">
+                <span class="visually-hidden">Оценка отеля 4 зведы</span>
                 <ul class="catalog-carsd-rating-stars list-reset star" aria-hidden="true">
                   <li class="catalog-cards-rating-stars-item"> <img src="images/star.svg" alt=""></li>
                   <li class=" catalog-cards-rating-stars-item"><img src="images/star.svg" alt=""></li>
@@ -244,6 +246,7 @@
               <a href="#" class="more">ПОДРОБНЕЕ</a>
               <button class="favorites-button" type="button" name="button">В ИЗБРАННОЕ</button>
               <div class="catalog-cards-rating">
+                <span class="visually-hidden">Оценка отеля 3 зведы</span>
                 <ul class="catalog-carsd-rating-stars list-reset star" aria-hidden="true">
                   <li class="catalog-cards-rating-stars-item"> <img src="images/star.svg" alt=""></li>
                   <li class=" catalog-cards-rating-stars-item"><img src="images/star.svg" alt=""></li>
@@ -262,6 +265,7 @@
               <p><a href="#" class="more">ПОДРОБНЕЕ</a></p>
               <button class="favorites-button" type="button" name="button">В ИЗБРАННОЕ</button>
               <div class="catalog-cards-rating">
+                <span class="visually-hidden">Оценка отеля 2 зведы</span>
                 <ul class="catalog-carsd-rating-stars list-reset star" aria-hidden="true">
                   <li class=" catalog-cards-rating-stars-item"><img src="images/star.svg" alt=""></li>
                   <li class=" catalog-cards-rating-stars-item"><img src="images/star.svg" alt=""></li>
@@ -285,7 +289,7 @@
                 <a class="pagination-link" href="#">4</a>
               </li>
               <li class="pagination-item more-pagination">
-                <a class="pagination-link" href="#">...</a>
+                <a class="pagination-link">...</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">10</a>

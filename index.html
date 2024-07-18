@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="icon" href="#" sizes="32x32">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
     <title>Город Седона</title>
   </head>
 
@@ -81,7 +81,8 @@
         <section class="hero" data-test="hero">
           <img class="hero-main-img" src="images/welcome.svg" width="458" height="352"
             alt="«Welcome to the gorgeous Sedona, because the Grand Canyon sucks!»">
-          <img class="hero-bottom" src="images/hero-bottom.svg" width="1200px" ; height="57px" ;>
+            <!--
+          <img class="hero-bottom" src="images/hero-bottom.svg" width="1200px" ; height="57px" ;>-->
           <h1 class="visually-hidden">Город Седона</h1>
         </section>
         <section class="advantages" data-test="advantages">
@@ -230,7 +231,7 @@
         </section>
       </footer>
     </div>
-    <div class="modal-container visually-hidden">
+    <div class="modal-container modal-close">
       <div class="modal modal-auth">
         <button class="modal-close-button" type="button">
           <svg class="close-svg" xmlns="http://www.w3.org/2000/svg" width="15" fill="#000" height="15" fill="none"
@@ -244,13 +245,13 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="modal-fieldset arrival-field">
-              <label class="label-title " for="arrival">Дата заезда:</label>
+              <label class="label-title label-arival" for="arrival">Дата Заезда:</label>
               <input class="modal-input-big " type="text" id="arrival" name="arrival" placeholder="Укажите дату"
                 value="27 апреля 2020">
               <span class="warning">Мы не можем отправить вас в прошлое.</span>
             </fieldset>
             <fieldset class="modal-fieldset departure-field">
-              <label class="label-title arrival-title" for="departure">Дата выезда:</label>
+              <label class="label-title arrival-title" for="departure">Дата Выезда:</label>
               <input class="modal-input-big" type="text" id="departure" name="departure" placeholder="Укажите дату"
                 value="1 сентября 2023">
               <span class="modal-free">На эти даты есть свободные номера. Пока есть.</span>
@@ -261,7 +262,7 @@
                 <div class="number">
                   <button class="plus" type="button">
                     <svg class="plus-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                      fill="rgba(117, 97, 87, 0.3)" fill-opaciry="1" viewBox="0 0 14 14">
+                      fill="rgba(117, 97, 87, 0.3)" fill-opacity="1" viewBox="0 0 14 14">
                       <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
                     </svg>
                   </button>
@@ -269,7 +270,7 @@
                     value="2" min="1" step="1">
                   <button type="button" class="minus">
                     <svg class="minus-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                      fill="rgba(117, 97, 87, 0.3)" fill-opaciry="1" viewBox="0 0 20 20">
+                      fill="rgba(117, 97, 87, 0.3)" fill-opacity="1" viewBox="0 0 20 20">
                       <path d="M3 9v2h14V9H3Z" />
                     </svg>
                   </button>
@@ -286,7 +287,7 @@
                 <div class="number">
                   <button class="plus" type="button">
                     <svg class="plus-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                      fill="rgba(117, 97, 87, 0.3)" fill-opaciry="1" viewBox="0 0 14 14">
+                      fill="rgba(117, 97, 87, 0.3)" fill-opacity="1" viewBox="0 0 14 14">
                       <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
                     </svg>
                   </button>
@@ -294,7 +295,7 @@
                     placeholder="0" min="1" step="1">
                   <button class="minus" type="button">
                     <svg class="minus-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                      fill="rgba(117, 97, 87, 0.3)" fill-opaciry="1" viewBox="0 0 20 20">
+                      fill="rgba(117, 97, 87, 0.3)" fill-opacity="1" viewBox="0 0 20 20">
                       <path d="M3 9v2h14V9H3Z" />
                     </svg>
                   </button>
