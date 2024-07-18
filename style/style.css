@@ -1328,6 +1328,7 @@ li.navigation-item {
   background-color: #7DB54F;
 }
 
+
 .catalog-list p {
   margin: 0;
   padding: 0;
@@ -1951,4 +1952,8 @@ input[type="number"]:focus {
   margin-right: 0;
   line-height: 18px;
   user-select: none;
+}
+
+.catalog-list-item .active-favorites:hover{
+  background-color: rgba(108, 158, 66, 1);
 }
