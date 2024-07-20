@@ -94,6 +94,7 @@ body {
   margin-right: 30px;
   margin-bottom: -10px;
   position: relative;
+  z-index: 2;
 }
 
 .main-nav p {
@@ -149,11 +150,11 @@ body {
   padding-left: 3px;
 }
 
-.site-navigation .navigation-item .navigation-link {
+.site-navigation .navigation-link {
   padding: 20px 10px;
 }
 
-.site-navigation .navigation-item .navigation-link:hover {
+.site-navigation .navigation-link:hover {
   border: none;
 }
 
@@ -214,9 +215,11 @@ li.navigation-item {
   text-decoration: none;
   margin-left: 3px;
   cursor: pointer;
-  display: flex;
-  overflow: visible;
-
+  display: block;
+height: min-content;
+max-width: 450px;
+padding: 8px 34px;
+margin-top: 15px;
 }
 
 .search-button:hover {
@@ -278,6 +281,7 @@ li.navigation-item {
 }
 
 .hero {
+  background-color: #68a2ca;
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -475,7 +479,6 @@ padding-top: 95px;
 
 .service h3 {
   text-align: center;
-  padding-top: 163px;
   padding-bottom: 10px;
 }
 
@@ -490,8 +493,8 @@ padding-top: 95px;
 
 .service-list-item {
   width: 400px;
-  height: 385px;
-  padding-top: 3px;
+  padding-top: 170px;
+  padding-bottom: 80px;
 }
 
 .service-item-home {
@@ -518,7 +521,7 @@ padding-top: 95px;
 }
 
 .service-list-item p {
-  width: 230px;
+  min-width: 230px;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -580,7 +583,6 @@ padding-top: 95px;
 /*подпишись на рассылку*/
 
 .newsletter {
-
   background-image: url("../images/subscribe-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -590,6 +592,10 @@ padding-top: 95px;
   align-items: center;
   padding-top: 97px;
   padding-bottom: 104px;
+}
+
+.newsletter:not(.newsletter-catalog){
+  background-color: #615048;
 }
 
 .newsletter-catalog {
@@ -621,7 +627,7 @@ padding-top: 95px;
   font-size: 20px;
   text-align: center;
   font-weight: 700;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   cursor: pointer;
 
 }
@@ -653,7 +659,7 @@ padding-top: 95px;
   height: 52px;
   border-radius: 4px 0px 0px 4px;
   border: none;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -692,11 +698,11 @@ padding-top: 95px;
 .social-list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding:0;
   display: flex;
   margin-right: auto;
   align-items: center;
-  max-width: 150px;
+  max-width: 250px;
   flex-wrap: wrap;
   row-gap: 10px;
 }
@@ -735,6 +741,9 @@ padding-top: 95px;
 .social-item-link {
   padding: 12px;
 }
+.social-item{
+  padding: 10px 0px;;
+}
 
 .nav-icon:hover {
   fill: rgba(104, 162, 202, 1);
@@ -757,6 +766,7 @@ padding-top: 95px;
 
 
 .filters {
+  background-color:#615048;
   background-image: url("../images/catalog-background.jpeg");
   background-size: cover;
   color: #FFFFFF;
@@ -1019,7 +1029,7 @@ padding-top: 95px;
   border-radius: 4px;
   border: solid 2px #e6e6e6;
   background-image: none;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -1125,7 +1135,7 @@ padding-top: 95px;
 
 
 .catalog-view-button-table {
-  background-image: url("../images/show_table.svg");
+  background-image: url("../images/show-table.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 8px;
@@ -1133,18 +1143,19 @@ padding-top: 95px;
 }
 
 .card-view-button-slider {
-  background-image: url("../images/show_slides.svg");
+  background-image: url("../images/show-slides.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 8px;
 }
 
 .card-view-button-list {
-  background-image: url("../images/show_list.svg");
+  background-image: url("../images/show-list.svg");
   background-repeat: no-repeat;
   background-position: center;
 
 }
+
 
 .catalog-list {
   list-style: none;
@@ -1187,11 +1198,11 @@ padding-top: 95px;
   align-items: center;
   padding: 0;
   margin: 0;
-  padding-top: 10px;
+
 }
 
 .catalog-cards-rating-stars-item {
-  padding: 2px 2px;
+  padding: 2px 12px;
 }
 
 .catalog-list-item {
@@ -1294,13 +1305,13 @@ padding-top: 95px;
   border-radius: 4px;
   background-color: #82B3D3;
   color: #ffffff;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   border: none;
   cursor: pointer;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   grid-column: 2/3;
   grid-row: 3/4;
 }
@@ -1508,7 +1519,7 @@ select:focus {
 .modal-title {
   color: #000000;
   text-transform: uppercase;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -1554,7 +1565,7 @@ select:focus {
 
 .label-title {
 
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1570,7 +1581,7 @@ select:focus {
 }
 
 .modal-search {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1601,7 +1612,7 @@ select:focus {
 .modal-input-big {
   width: 440px;
   background-color: #f2f2f2;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1620,7 +1631,7 @@ select:focus {
 .modal-input-small {
   width: 31px;
   background-color: #f2f2f2;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1811,7 +1822,7 @@ input[type="number"]:focus {
 }
 
 .tooltip-text {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -1944,7 +1955,7 @@ input[type="number"]:focus {
 }
 
 .youtube-item {
-  padding-top: 2px;
+  padding-top: 10px;
 }
 .modal-close {
   display: none;
@@ -1956,4 +1967,14 @@ input[type="number"]:focus {
 
 .navigation-link:not(.current-page):active{
   opacity: 0.3;
+}
+
+.catalog-cards-rating-stars-item{
+  display: inline-block;
+  background-image:url("../images/star.svg");
+  width: 18px;
+  height: 34px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 18px 17px;
 }
