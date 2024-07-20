@@ -178,7 +178,7 @@ li.navigation-item {
   margin: 0;
   padding: 0;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-left: auto;
 
 }
@@ -206,8 +206,7 @@ li.navigation-item {
   font-weight: 700;
   line-height: 20px;
   text-align: center;
-  width: 160px;
-  height: 36px;
+  min-width: 160px;
   padding: 8px 34px 8px 34px;
   color: #FFFFFF;
   border-radius: 4px;
@@ -215,6 +214,9 @@ li.navigation-item {
   text-decoration: none;
   margin-left: 3px;
   cursor: pointer;
+  display: flex;
+  overflow: visible;
+
 }
 
 .search-button:hover {
@@ -351,7 +353,7 @@ li.navigation-item {
   height: 2px;
   background-color: rgba(0, 0, 0, 0.256);
   transform: translate(-50%);
-  top: 95px;
+  top: 103px;
   left: 87px;
 }
 
@@ -434,12 +436,13 @@ li.navigation-item {
 
 .advantages-list-item {
   width: 400px;
-  height: 385px;
   background-color: rgba(131, 179, 211, 0.122);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 90px;
+padding-top: 95px;
 }
 
 .center-item {
@@ -1047,6 +1050,9 @@ li.navigation-item {
   width: 20px;
   height: 20px;
   cursor: pointer;
+  background-color: #FFFFFF;
+  border:none;
+  border-radius: 5px;
 }
 
 .toggle-min {
@@ -1942,4 +1948,12 @@ input[type="number"]:focus {
 }
 .modal-close {
   display: none;
+}
+
+.navigation-link:not(.current-page):hover{
+  opacity: 0.6;
+}
+
+.navigation-link:not(.current-page):active{
+  opacity: 0.3;
 }
