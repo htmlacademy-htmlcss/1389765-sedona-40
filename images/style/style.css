@@ -1125,7 +1125,7 @@ padding-top: 95px;
 
 
 .catalog-view-button-table {
-  background-image: url("../images/show_table.svg");
+  background-image: url("../images/show-table.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 8px;
@@ -1133,14 +1133,14 @@ padding-top: 95px;
 }
 
 .card-view-button-slider {
-  background-image: url("../images/show_slides.svg");
+  background-image: url("../images/show-slides.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 8px;
 }
 
 .card-view-button-list {
-  background-image: url("../images/show_list.svg");
+  background-image: url("../images/show-list.svg");
   background-repeat: no-repeat;
   background-position: center;
 
