@@ -74,6 +74,13 @@ body {
   margin-left: 20px;
 }
 
+.like:hover{
+  opacity: 0.6;
+  }
+
+  .like:active {
+    opacity: 0.3;
+    }
 
 .main-nav-icon {
   position: absolute;
@@ -89,6 +96,14 @@ body {
   position: relative;
   margin-left: 15px;
 }
+
+.search:hover{
+opacity: 0.6;
+}
+
+.search:active{
+  opacity: 0.3;
+  }
 
 .logo {
   margin-right: 30px;
@@ -759,9 +774,7 @@ padding-top: 95px;
 }
 
 /*каталог main фильтры*/
-.promo-icon {
-  margin-right: 10px;
-}
+
 
 
 
@@ -784,7 +797,6 @@ padding-top: 95px;
   list-style-type: none;
 }
 
-.filters-group {}
 
 
 .last-filters-group {
@@ -832,7 +844,17 @@ padding-top: 95px;
   font-size: 16px;
   font-weight: 400;
   text-align: left;
+  padding: 0;
+  margin: 0;
+ display: flex;
+ padding-left: 15px;
 
+}
+
+.promo-icons-link{
+  padding-left: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .promo-icons-item:hover {
